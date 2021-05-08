@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Text Editor</title>
+</head>
+
+<body>
+    <form>
+        <button type="button" data-button="bold">
+            <i class="fa fa-bold" aria-hidden="true"></i>
+        </button>
+        <button type="button" data-button="italic">
+            <i class="fa fa-italic" aria-hidden="true"></i>
+        </button>
+        <button type="button" data-button="insertOrderedList">
+            <i class="fa fa-list-ol" aria-hidden="true"></i>
+        </button>
+        <button type="button" data-button="insertUnorderedList">
+            <i class="fa fa-list-ul" aria-hidden="true"></i>
+        </button>
+        <input type="button" id="saveFile" class="input-styling" value="Save file" onclick="savefile()"></input>
+        <label for="loadFile" class="input-styling">
+            Load file
+        </label>
+        <input type="file" id="loadFile" onclick="value=null;"></input>
+    </form>
+    <iframe id="output" name="textField"></iframe>
+</body>
+<script src="https://use.fontawesome.com/a7c1a58e1a.js"></script>
+<script src="app.js"></script>
+
+</html>
